@@ -1,0 +1,61 @@
+.book-title{
+  font: normal 400 36px/50px DaimlerCA-Regular,"SimSun",serif;
+  color: #666;
+  width: 185px;
+  margin: 50px auto 40px;
+  position: relative;
+  padding: 0 20px;
+}
+.book-title::before{
+  content: '';
+  width: 350px;
+  height: 1px;
+  background-color: #e1e1e1;
+  position: absolute;
+  left: -350px;
+  top: 25px;
+}
+.book-title::after{
+  content: '';
+  width: 350px;
+  height: 1px;
+  background-color: #e1e1e1;
+  position: absolute;
+  right: -350px;
+  top: 25px;
+}
+.book-content{
+  min-height: 468px;
+  background: url(./../images/testdrivebg.jpg) no-repeat;
+  background-position: right top;
+}
+.book-content{
+  margin-left: 388px;
+}
+.content-description{
+  font-size: 14px;
+  color: #666;
+  width: 300px;
+}
+.name,.telephone,.book-now{
+  width: 300px;
+  display: block;
+  margin-top: 30px;
+}
+.name,.telephone{
+  height: 50px;
+  font-size: 14px;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #a5a1a1;
+  outline: none;
+}
+.book-now{
+  height: 30px;
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+}
+

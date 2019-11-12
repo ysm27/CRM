@@ -1,0 +1,74 @@
+.content{
+  margin: 20px 50px 0 30px;
+}
+.content-title{
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+}
+.clue{
+  height: 624px;
+  display: flex;
+  margin-top: 20px;
+}
+.clue-info{
+  width: 630px;
+  background-color: #e9e9e9;
+  font-size: 14px;
+  position: relative;
+}
+.info-list{
+  list-style: none;
+  padding: 25px;
+  font-size: 16px;
+}
+.info-item{
+  margin-bottom: 35px;
+}
+.info-item select{
+  font-size: 14px;
+}
+.info-item .remark, .add-log{
+  display: block;
+  margin-top: 5px;
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  font-size: 15px;
+  outline: none;
+}
+.save,.add{
+  width: 100%;
+  height: 50px;
+  background-color: #000;
+  font-size: 16px;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+.clue-log{
+  width: 650px;
+  background-color: #e9e9e9;
+  font-size: 13px;
+  margin-left: 10px;
+  position: relative;
+}
+.log-list{
+  list-style: none;
+  padding: 25px 25px 0 25px;
+  height: 419px;
+  overflow: scroll;
+  margin-bottom: 25px;
+}
+.log-item{
+  margin-bottom: 25px;
+}
+.log-content{
+  display: block;
+  margin-top: 5px;
+}
+.add-input{
+  position: absolute;
+  bottom: 25px;
+  width: 600px;
+}
