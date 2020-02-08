@@ -9,17 +9,16 @@ var authMiddleware = require('./../middlewares/auth');
 router.get('/', function(req, res, next) {
   res.render('index');
 });
-
-router.get('/admin/userCreate', function(req, res, next) {
-  res.render('admin/userCreate');
+router.get('/book', function(req, res, next) {
+  res.render('book');
 });
+
 router.get('/admin/user', authMiddleware.mustLogin, authMiddleware.mustRoot, userController.show);
+router.get('/admin/userCreate', authMiddleware.mustLogin, authMiddleware.mustRoot, userController.renderCreate);
 router.get('/admin/userEdit/:id', authMiddleware.mustLogin, authMiddleware.mustRoot, userController.renderEdit);
 
 router.get('/admin/clue', authMiddleware.mustLogin, clueController.show);
 router.get('/admin/clue/:id', authMiddleware.mustLogin, clueController.renderClue);
-// router.get('/admin/clue/:id/log', clueController.renderClueLog);
-
 
 router.get('/login', authController.renderLogin);
 

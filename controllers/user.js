@@ -84,6 +84,10 @@ const userController = {
       res.render('error', res.locals);
     }
   },
+  renderCreate: async function(req,res,next){
+      res.locals.nav = 'user';
+      res.render('admin/userCreate');
+  },
 }
 
 module.exports = userController;

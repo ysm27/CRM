@@ -31,7 +31,7 @@ const authController = {
   },
   renderLogin: async function(req,res,next){
     if(res.locals.isLogin){
-      res.redirect('/admin/user');
+      res.redirect('/admin/clue');
       return
     }else{
       res.render('login', res.locals);

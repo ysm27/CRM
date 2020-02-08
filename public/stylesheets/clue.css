@@ -12,15 +12,14 @@
 }
 .table-content th{
   padding: 6px;
-  font-size: 15px;
 }
 .table-content td{
   color: rgb(82, 80, 80);
-  font-size: 15px;
 }
 .table-content th,.table-content td{
   border: 1px solid rgba(155, 156, 156, 0.329);
   padding: 8px;
+  font-size: 15px;
 }
 .table-content tr:hover{
   cursor: pointer;

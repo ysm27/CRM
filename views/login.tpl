@@ -2,7 +2,6 @@
 
 {% block css %}
   <link rel="stylesheet" href="./stylesheets/login.css">
-  <link rel="stylesheet" href="./stylesheets/common.css">
 {% endblock %}
 
 {% block content %}

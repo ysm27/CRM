@@ -7,6 +7,10 @@ let userPage = {
   },
   deleteUser: function(){
     let id = $(this).data('id');
+    if(!id){
+      alert('缺少重要参数');
+      return
+    }
     $.ajax({
       url: '/api/admin/user',
       data: {id},

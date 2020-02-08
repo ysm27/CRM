@@ -8,7 +8,7 @@ const PAGE = {
   logout: function(){
     $.ajax({
       url: '/api/logout',
-      type: 'POST',
+      type: 'GET',
       success: function(data){
         if(data.code === 200){
           alert('退出成功');

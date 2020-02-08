@@ -3,7 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+.page{
+  height: 100vh;
+}
 .page-header{
+  height: 108px;
   min-width: 500px;
 }
 .header-nav{
@@ -35,7 +39,8 @@
   margin-left:  35px;
 }
 .page-mainer{
-  height: 730px;
+  height: 83%;
+  min-height: 550px;
   display: flex;
   min-width: 1850px;
 }
@@ -64,10 +69,11 @@
   background-color: #363535;
 }
 .page-footer{
-  height: 25px;
+  height: 6%;
   background: #000;
   color: #fff;
   font-size: 12px;
-  text-align: center;
-  line-height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

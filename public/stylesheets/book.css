@@ -1,8 +1,45 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.page{
+  height: 100vh;
+}
+.page-header{
+  height: 17%;
+}
+.header-nav{
+  height: 108px;
+  background-color: #222;
+}
+.logo{
+  width: 259px;
+  height: 64px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 100px;
+}
+.page-mainer{
+  height: 78%;
+  min-height: 550px;
+  padding-top: 50px;
+}
+.page-footer{
+  height: 5%;
+  background: #000;
+  color: #fff;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .book-title{
   font: normal 400 36px/50px DaimlerCA-Regular,"SimSun",serif;
   color: #666;
   width: 185px;
-  margin: 50px auto 40px;
+  margin: 0 auto 40px;
   position: relative;
   padding: 0 20px;
 }
@@ -58,4 +95,3 @@
   outline: none;
   cursor: pointer;
 }
-

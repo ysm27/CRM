@@ -8,7 +8,6 @@
   <div class="content">
     <a class="content-title" href="/admin/clue">返回线索列表 >></a>
     <div class="clue">
-      {% if userInfo.role == 1 %}
       <div class="clue-info" >
         <ul class="info-list">
           {% for val in clue  %}
@@ -38,7 +37,7 @@
           </div>
         </ul>
       </div>
-      {% endif %}
+      {% if userInfo.role == 1 %}
       <div class="clue-log">
         <ul class="log-list">
           {% for val in clueLog  %}
@@ -47,13 +46,13 @@
             <span class="log-content">{{val.content}}</span>
           </li>
           {% endfor %}
-
           <div class="add-input">
             <div class="log-item">添加记录：<textarea class="add-log" name="clue_log" cols="30" rows="10" placeholder="请输入本次跟踪的记录～"></textarea></div>
             <button id="add" class="add" data-id="{{clue[0].id}}">添加</button>
           </div>
         </ul>
       </div>
+      {% endif %}
     </div>
   </div>
 {% endblock %}

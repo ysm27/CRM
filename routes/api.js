@@ -7,6 +7,7 @@ var authController = require('../controllers/auth');
 router.get('/', function(req, res, next) {
   res.send('respond with a resource');
 });
+
 router.post('/admin/user', userController.insert);
 router.put('/admin/user', userController.update);
 router.delete('/admin/user', userController.delete);
@@ -17,6 +18,6 @@ router.post('/admin/clue/:id/log', clueController.addLog);
 
 
 router.post('/login', authController.login);
-router.post('/logout', authController.logout);
+router.get('/logout', authController.logout);
 
 module.exports = router;

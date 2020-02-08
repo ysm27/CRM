@@ -15,8 +15,7 @@
     <div class="role">角色</div>
     <div class="role-item">
       <input name="role" type="radio" value="1" {{'checked' if users.role == 1 else ''}}>&nbsp 销售经理 &nbsp
-      <input name="role" type="radio" value="2" 
-      {{'checked' if users.role == 2 else ''}}>&nbsp 销售
+      <input name="role" type="radio" value="2" {{'checked' if users.role == 2 else ''}}>&nbsp 销售
     </div>
     <button id="save-btn" class="save" data-id="{{users.id}}">保存</button>
   </div>
